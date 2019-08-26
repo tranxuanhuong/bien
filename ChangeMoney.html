@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<br lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+Amount : </br><input type="text" id="money">
+From Currency :
+
+<select id="Fcu">
+    <option value="23000">VN</option>
+    <option value="1">USA</option>
+    <option value="3.5">China</option>
+</select>
+To Currency :
+
+<select id="Tocu">
+    <option value="1">USA</option>
+    <option value="23000">VN</option>
+    <option value="3.5">China</option>
+</select>
+<button type="button" onclick="showChange();" style="background-color: blueviolet">CONVERT</button>
+
+</form>
+<script>
+
+  function showChange() {
+      let vn= document.getElementById('money').value;
+      let vnd=document.getElementById('Fcu').value;
+
+      let vndd=document.getElementById('Tocu').value;
+      let a=(vn*vnd)/vndd;
+      document.write("So tien da chuyen doi la " + a);
+
+  }
+
+</script>
+
+</body>
+</html>

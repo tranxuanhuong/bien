@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function diemtrungbinh() {
+        let dl = parseInt(prompt("nhap diem ly"));
+        let dh = parseInt(prompt("nhap diem hoa"));
+        let ds = parseInt(prompt("nhap diem sinh"));
+        let sum = dl + dh + ds;
+        let cur = sum / 3;
+        document.write("Tong la " + sum + '</br>');
+        document.write("Trung binh cong " + cur + '</br>');
+    }
+   diemtrungbinh();
+    function  nhapdo() {
+        let doC=parseInt(prompt("nhap do C"));
+        let doF=(9*doC+160)/5;
+        document.write("do F la " + doF +'</br>');
+
+    }
+    nhapdo();
+
+    function dientichhinhtron() {
+        let r=parseInt(prompt("nhap ban kinh "));
+        let S=r*r*Math.PI;
+        document.write("Dien tich hinh tron la " + S + '</br>');
+        
+    }
+    dientichhinhtron();
+
+    function chuvihinhtron() {
+        let r=parseInt(prompt("nhap ban kinh "));
+        let C= 2*r*Math.PI;
+        document.write("Chu vi hinh tron la " + C);
+
+    }
+    chuvihinhtron();
+</script>
+
+</body>
+</html>

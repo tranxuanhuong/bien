@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="border: solid 1px">
+    <h3>Calculator</h3>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+
+    <p id="result"></p>
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="plus()">
+    <input type="button" value="*" onclick="multi()">
+    <input type="button" value="/" onclick="divide()">
+
+
+</div>
+<script>
+    function sum() {
+        let value1= document.getElementById('num1').value;
+        let num1=Number(value1);
+
+        let value2= document.getElementById('num2').value;
+        let num2=Number(value2);
+
+        let sum=num1+num2;
+        document.getElementById('result').innerHTML= sum;
+
+    }
+    function plus() {
+        let value1= document.getElementById('num1').value;
+        let num1=Number(value1);
+
+        let value2= document.getElementById('num2').value;
+        let num2=Number(value2);
+
+        let plus=num1-num2;
+        document.getElementById('result').innerHTML= plus;
+
+    }
+    function multi() {
+        let value1= document.getElementById('num1').value;
+        let num1=Number(value1);
+
+        let value2= document.getElementById('num2').value;
+        let num2=Number(value2);
+
+        let multi=num1*num2;
+        document.getElementById('result').innerHTML= multi;
+
+    }
+    function divide() {
+        let value1=document.getElementById('num1').value;
+        let num1=Number(value1);
+
+        let value2=document.getElementById('num2').value;
+        let num2=Number(value2);
+
+        let divi=num1/num2;
+        document.getElementById('result').innerHTML=divi;
+
+    }
+
+</script>
+</body>
+</html>
